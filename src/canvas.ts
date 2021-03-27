@@ -1,3 +1,4 @@
+import { Ball } from "./ball.js";
 import { CANVAS_WIDTH, CANVAS_HEIGHT } from "./constants.js";
 
 export class Canvas {
@@ -11,7 +12,14 @@ export class Canvas {
     this.canvas.height = CANVAS_HEIGHT;
   }
 
-  drawBackground() {
+  drawBackground(): void {
     this.context.fillRect(0, 0, this.canvas.width, this.canvas.height)
+  }
+
+  drawObject(inObject: Ball): void {
+    this.context.beginPath();
+    this.context.fillStyle = "#ff0000";
+    this.context.arc(inObject.position.x, inObject.position.y, 30, 0, 2 * Math.PI, false);
+    this.context.fill();
   }
 }
