@@ -1,0 +1,23 @@
+{
+  "name": "canvas-ts",
+  "version": "1.0.0",
+  "description": "html5 canvas typescript playground",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && cp index.html style.css ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RakshithNM/canvas-ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RakshithNM/canvas-ts/issues"
+  },
+  "homepage": "https://github.com/RakshithNM/canvas-ts#readme",
+  "dependencies": {
+    "typescript": "^4.2.3"
+  }
+}
